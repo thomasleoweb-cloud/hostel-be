@@ -37,7 +37,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'https://hostelmanagementos.netlify.app/',
+  origin: process.env.CLIENT_URL || 'https://hostelmanagementos.netlify.app',
   credentials: true
 }));
 
